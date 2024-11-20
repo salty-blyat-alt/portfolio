@@ -71,17 +71,7 @@ function Contact() {
         );
     }
   };
-
-  const handleCloseSnackbar = (
-    event?: React.SyntheticEvent | Event,
-    reason?: string
-  ) => {
-    if (reason === "clickaway") {
-      return;
-    }
-    setOpenSuccessSnackbar(false);
-    setOpenErrorSnackbar(false);
-  };
+ 
 
   return (
     <div id="contact">
@@ -162,12 +152,10 @@ function Contact() {
           {/* Success Snackbar */}
           <Snackbar
             open={openSuccessSnackbar}
-            autoHideDuration={6000}
-            onClose={handleCloseSnackbar}
+            autoHideDuration={6000} 
             anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
           >
-            <Alert
-              onClose={handleCloseSnackbar}
+            <Alert 
               severity="success"
               sx={{ width: "100%" }}
             >
@@ -178,12 +166,10 @@ function Contact() {
           {/* Error Snackbar */}
           <Snackbar
             open={openErrorSnackbar}
-            autoHideDuration={6000}
-            onClose={handleCloseSnackbar}
+            autoHideDuration={6000} 
             anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
           >
-            <Alert
-              onClose={handleCloseSnackbar}
+            <Alert 
               severity="error"
               sx={{ width: "100%" }}
             >
