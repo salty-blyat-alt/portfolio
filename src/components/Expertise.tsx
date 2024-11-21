@@ -73,6 +73,8 @@ function Expertise() {
                 <Chip key={index} className="chip" label={label} />
               ))}
             </div>
+
+            
           </div>
         </div>
       </div>

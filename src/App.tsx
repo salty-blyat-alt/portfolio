@@ -9,6 +9,7 @@ import Timeline from "./components/Timeline";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Reference from "./components/Reference";
 
 function App() {
     const [mode, setMode] = useState<string>('dark');
@@ -31,6 +32,7 @@ function App() {
         <FadeIn transitionDuration={700}>
             <Main/>
             <Expertise/>
+            <Reference />
             <Education />
             <Timeline/>
             <Project/>
