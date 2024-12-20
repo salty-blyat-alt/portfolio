@@ -5,7 +5,7 @@ import setec from "../assets/images/setec.png";
 function Education() {
   return (
     <div className="container" id="expertise">
-      <div className="skills-container" style={{ backgroundColor: "red" }}>
+      <div className="skills-container">
         <h1>Education</h1>
         <div className="skills-grid">
           <div className="skill">
