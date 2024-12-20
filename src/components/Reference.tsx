@@ -9,7 +9,15 @@ import { faBuilding, faEnvelope } from "@fortawesome/free-regular-svg-icons";
 const Reference = () => {
   return (
     <div className="container" id="expertise">
-      <div className="skills-container">
+      <div
+        className="skills-container"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          width: "100%",
+          justifyContent: "start",
+        }}
+      >
         <h1>Reference</h1>
         <div className="skills-grid">
           <div className="skill">
@@ -27,7 +35,7 @@ const Reference = () => {
 
               <p style={{ display: "flex", alignItems: "center", gap: 8 }}>
                 <FontAwesomeIcon icon={faBuilding} />
-                
+
                 <span>Setec Institute, Teacher</span>
               </p>
             </div>

@@ -3,6 +3,7 @@ import "../assets/styles/Main.scss";
 import profile from "../assets/images/profile.jpg";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import { Tooltip } from "@mui/material";
+import GitlabIcon from "../icons/GitlabIcon";
 
 function Main() {
   return (
@@ -21,8 +22,14 @@ function Main() {
           />
         </div>
         <div className="content">
-          <div className="social_icons">
-            <Tooltip title="salty-blyat-alt (Currently using)">
+          <div
+            className="social_icons"
+            style={{
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <Tooltip title="salty-blyat-alt">
               <a
                 href="https://github.com/salty-blyat-alt"
                 target="_blank"
@@ -31,14 +38,13 @@ function Main() {
                 <GitHubIcon />
               </a>
             </Tooltip>
-
-            <Tooltip title="salty-blyat (Suspended)">
+            <Tooltip title="Lor Hokheng">
               <a
-                href="https://github.com/salty-blyat"
+                href="https://gitlab.com/hokheng12123"
                 target="_blank"
                 rel="noreferrer"
               >
-                <GitHubIcon />
+                <GitlabIcon />
               </a>
             </Tooltip>
 

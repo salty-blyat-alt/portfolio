@@ -2,12 +2,13 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import "../assets/styles/Footer.scss";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import { Tooltip } from "@mui/material";
+import GitlabIcon from "../icons/GitlabIcon";
 
 function Footer() {
   return (
     <footer>
       <div>
-        <Tooltip title="salty-blyat-alt (Currently using)">
+        <Tooltip title="salty-blyat-alt">
           <a
             href="https://github.com/salty-blyat-alt"
             target="_blank"
@@ -16,20 +17,19 @@ function Footer() {
             <GitHubIcon />
           </a>
         </Tooltip>
-        <Tooltip title="salty-blyat (Suspended)">
+        <Tooltip title="Lor Hokheng">
           <a
-            href="https://github.com/salty-blyat"
+            href="https://gitlab.com/hokheng12123"
             target="_blank"
             rel="noreferrer"
           >
-            <GitHubIcon />
+            <GitlabIcon />
           </a>
         </Tooltip>
-
         <Tooltip title="(+855) 097 746 4977">
-        <a href="https://t.me/Lor_Hokheng" target="_blank" rel="noreferrer">
-          <TelegramIcon />
-        </a>
+          <a href="https://t.me/Lor_Hokheng" target="_blank" rel="noreferrer">
+            <TelegramIcon />
+          </a>
         </Tooltip>
       </div>
       <p>
